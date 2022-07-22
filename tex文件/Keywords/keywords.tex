@@ -1,0 +1,33 @@
+\def\SetClass{article}
+\documentclass{\SetClass}
+\usepackage[linesnumbered,lined,boxed,commentsnumbered]{algorithm2e}
+\begin{document}
+\IncMargin{1em}
+\begin{algorithm}
+  % -----------------------------------------
+  \SetKw{Kw}{text}  % defines a keyword
+  \Kw\;    %不会自动换行，且末尾无`;`，定义关键字text
+  \Kw{tt}\;
+  % ------------------------------------------------
+  \SetKwHangingKw{HData}{Data$\rightarrow$} %which defines a hanging keyword
+   % 会自动换行，且末尾有`;`定义悬挂关键字Data
+  \HData{}
+  \HData{cc}
+
+  % ------------------------------------------------
+  \SetKwData{Left}{left}  %  which defines a data text.
+  \Left
+
+  % ------------------------------------------------
+  \SetKwArray{KwAarray}{array}  % which defines an array keywords
+  \KwAarray{n}\;  % 不会自动换行，且末尾无`;`
+  % ------------------------------------------------
+  % \SetKwBlock{Begin}{begin}{end}
+  %
+  % \Begin{txt}
+  % \KwRet{$231432$}
+  % \Return{$789890-$}\;
+  % \Begin(\tcc{hafsjkfhasl}){hfadsjk}
+\end{algorithm}
+
+\end{document}

@@ -1,0 +1,39 @@
+\def\SetClass{article}
+\documentclass{\SetClass}
+\usepackage[linesnumbered,lined,boxed,commentsnumbered]{algorithm2e}
+\begin{document}
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwInOut{Input}{input}
+  \SetKwInOut{Output}{output}
+  \Input{$x,y$}
+  \Output{$z$}
+  \BlankLine
+
+  \emph{While  example}\;
+  \SetAlgoLined\SetArgSty{}
+  \tcp{While and If-Else !!}
+  \While{condition}{
+    Do text\;
+    \eIf{If-Else condition}{
+      OK\;
+      }{
+      NO\;
+      }
+  }
+  \tcp{While,For and If-Else !!!}
+  \While{while condition}{
+    Do text\;
+    \For{i in range()}{
+      For text\;
+      \eIf{If-else condition}{
+        OK\;
+        }{
+        NO\;
+        }
+    }
+  }
+
+\end{algorithm}
+
+\end{document}

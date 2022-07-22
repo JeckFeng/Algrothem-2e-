@@ -1,0 +1,91 @@
+\def\SetClass{article}
+\documentclass{\SetClass}
+\usepackage[linesnumbered,lined,boxed,commentsnumbered]{algorithm2e}
+\begin{document}
+\IncMargin{1em}
+\begin{algorithm}[H]
+  \SetKwInput{KwInput}{Input}                % Set the Input
+  \SetKwInput{KwOutput}{Output}              % set the Output
+  \KwInput{$x$,$y$}
+  \KwOutput{$z$}
+  \KwData{Testing set $x$}
+    %定义一个函数名称
+  \SetKwFunction{Fsum}{Sum}  %Fsum为关键字，Sum为pdf文档中的函数名字
+  % Write Function with word ``Function''
+% ___________________定义一个FUnction函数___________________________
+
+  \SetKwProg{Fn}{Function}{:}{end}  % Function 为pdf文档中的函数标签
+  \Fn{\Fsum{$x$,$y$}}{
+        a = x\;
+        b = y\;
+        sum = a+b\;
+        \KwRet sum\;
+  }
+% ___________________定义一个Def函数________________________________
+  \SetKwProg{Fn}{Def}{:}{end}  % 注意第二个中括号中，将函数标签改为了Def
+  \Fn{\Fsum{$x$,$y$}}{
+        a = x\;
+        b = y\;
+        sum = a+b\;
+        \KwRet sum\;
+  }
+
+% ___________________定义一个Main函数________________________________
+  \SetKwProg{Fn}{Main}{:}{end}  % 注意第二个中括号中，将函数标签改为了Main
+  \Fn{\Fsum{$x$,$y$}}{
+        a = x\;
+        b = y\;
+        sum = a+b\;
+        \KwRet sum\;
+  }
+
+% ___________________无`end`结尾的Function函数__________________________
+  \SetKwProg{Fn}{Function}{:}{}
+  \Fn{\Fsum{$x$,$y$}}{
+        a = x\;
+        b = y\;
+        sum = a+b\;
+        \KwRet sum\;
+  }
+
+% ___________________以`return`结尾的Function________________________
+  \SetKwProg{Fn}{Function}{:}{\KwRet{}}
+  \Fn{\Fsum{$x$,$y$}}{
+        a = x\;
+        b = y\;
+        sum = a+b\;
+        \KwRet sum\;
+  }
+% ___________________Function is 样式________________________
+  \SetKwProg{Fn}{Function}{is}{end}
+  \Fn{\Fsum{$x$,$y$}}{
+        a = x\;
+        b = y\;
+        sum = a+b\;
+        \KwRet sum\;
+  }
+
+% ___________________Function ：样式________________________
+  \SetKwProg{Fn}{Function}{:}{end}
+  \Fn{\Fsum{$x$,$y$}}{
+        a = x\;
+        b = y\;
+        sum = a+b\;
+        \KwRet sum\;
+  }
+
+% ___________________以`\SetKwProg`单独创建函数________________________
+  \SetKwProg{Fn}{Function}{:}{end}
+  \Fn{myFunction(x,y)}{
+  $x=x+1$\;
+  return $x$\;
+  }
+
+%% ___________________以`\SetKwFunction`单独创建函数______________________
+  \SetKwFunction{FuncName}{Ga}
+  result = \FuncName{} \;
+  result2 = \FuncName{do that}\;
+
+    \caption{Test Algorithm}
+\end{algorithm}
+\end{document}

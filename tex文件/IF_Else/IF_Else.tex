@@ -1,0 +1,53 @@
+\def\SetClass{article}
+\documentclass{\SetClass}
+\usepackage[linesnumbered,lined,boxed,commentsnumbered]{algorithm2e}
+\begin{document}
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwInOut{Input}{input}
+  \SetKwInOut{Output}{output}
+  %\SetAlgoVlined  %算法中显示折线
+  \Input{$x,y$}
+  \Output{$z$}
+  \BlankLine
+  \emph{For - Else example}\;
+  \tcp{use 'OK' express `if' statement}
+  \tcp{use 'NO' express `else' statement}
+  \eIf(\tcc*[h]{first if-else structure}){condition1}{
+  OK\;
+  }{
+  NO\;
+  }
+  \If(\tcc*[h]{second if-else structure}){condition2}{
+  OK\;
+  }
+  \lIf(\tcc*[h]{third if-else structure}){condition3}{OK}\lElse{NO}
+  \leIf(\tcc*[h]{fourth if-else structure}){condition4}{OK}{NO}
+  \lIf(\tcc*[h]{fifth if-else structure}){condition5}{OK}
+  \uElseIf{condition5.1}{
+  OK\;
+  }
+  \uElseIf{condition5.2}{
+  OK\;
+  }
+  \ElseIf{}{
+  NO\;
+  \Return{'wonderful!!'}
+  }
+  \uIf(\tcc*[h]{sixth if-else structure}){condition6}{
+  OK\;
+  }
+  \uElseIf{condition6.1}{
+  NO\;
+  }
+  \Else{
+  NO\;
+  \Return{'HHHHa!'}
+  }
+
+
+
+
+\end{algorithm}
+
+\end{document}

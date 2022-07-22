@@ -1,0 +1,30 @@
+\def\SetClass{article}
+\documentclass{\SetClass}
+\usepackage[linesnumbered,lined,boxed,commentsnumbered]{algorithm2e}
+\begin{document}
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwInOut{Input}{input}
+  \SetKwInOut{Output}{output}
+  \Input{$x,y$}
+  \Output{$z$}
+  \BlankLine
+
+  \emph{tcp or tcc  example}\;
+  \tcc{text1}
+  \tcp{text1}
+  \If(\tcc{text2}){condition}{  % right justied side comment
+  OK\;
+  }
+
+  $i=4$\tcc*[l]{text4} %left justied side comment, ends the line
+  $i=5$\tcc*[r]{text5} % right justied side comment, ends the line (default):
+  \tcc*[f]{text6} % right justied comment, without end line; useful with "if-then-else" macros
+
+  \tcc*[h]{text7} %left justied comment, without end line; useful with "if-then-else" macros
+
+
+
+\end{algorithm}
+
+\end{document}

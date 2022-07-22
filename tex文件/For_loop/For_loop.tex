@@ -1,0 +1,40 @@
+\def\SetClass{article}
+\documentclass{\SetClass}
+\usepackage[linesnumbered,lined,boxed,commentsnumbered]{algorithm2e}
+\begin{document}
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwInOut{Input}{input}
+  \SetKwInOut{Output}{output}
+  %\SetAlgoVlined  %算法中显示折线
+  \Input{$x,y$}
+  \Output{$z$}
+  \BlankLine
+
+  \emph{For - Else example}\;
+  \SetAlgoLined\SetArgSty{}
+  \ForAll{i of $S_1 $}{
+  text\;
+  }
+  \For{$i=1$ \KwTo max}{
+  text\;
+  }
+  \ForEach{i in the set }{
+  text\;
+  }
+  \lFor{i in range() }{
+  text\;
+  }
+  \lFor*{i in range() }{
+  text\;
+  }
+  \tcp{Nesting of two for loops}  % 两个for循环的嵌套
+  \For{$i=1$ \KwTo max}{
+  text1\;
+    \For{i in range() }{
+    text2\;
+    }
+  }
+\end{algorithm}
+
+\end{document}

@@ -1,0 +1,30 @@
+\def\SetClass{article}
+\documentclass{\SetClass}
+\usepackage[lined,boxed]{algorithm2e}
+\begin{document}
+\IncMargin{1em}
+\begin{algorithm}
+  %\SetAlgoLined  % 可以让算法中有竖线
+  %\SetAlgoNoLine  %可以让算法中没有竖线
+  \renewcommand{\algorithmcfname}{MyAlgorithm!!}
+  \renewcommand{\thealgocf}{3}  %为算法重新进行编号，只能与\caption{}命令一起使用才有效
+
+%  \TitleOfAlgo{Algorithm title} %在算法最开始添加算法标题 ，该宏命令不会对算法编号
+
+  \KwData{this text}
+  \KwResult{How to write algorithm with }
+  initialization\;
+  \While{$x ==10$ }{
+    $y=y-x$\;
+    \eIf{$y<10$}{
+      go to next section\;
+      }
+      {
+      go back to the begining of current section\;
+
+      }
+  }
+  \caption{Algorithm}
+\end{algorithm}
+
+\end{document}
