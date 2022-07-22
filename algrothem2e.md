@@ -32,6 +32,13 @@
 	- [<font color='#94a657'>`\SetKwData{Left}{left}` 示例</font>](#font-color94a657setkwdataleftleft-示例font)
 	- [<font color='#94a657'>`\SetKwArray{KwAarray}{array}` 示例</font>](#font-color94a657setkwarraykwaarrayarray-示例font)
 - [<font color="#9c6680">12.Algorithm2e宏包中基本关键词和基本块结构 </font>](#font-color9c668012algorithm2e宏包中基本关键词和基本块结构-font)
+- [<font color="#9c6680">13.在Algorithm2e宏包中使用中文 </font>](#font-color9c668013在algorithm2e宏包中使用中文-font)
+- [<font color="#9c6680">14.算法标题 </font>](#font-color9c668014算法标题-font)
+	- [`\caption{}`命令](#caption命令)
+	- [`ruled`options](#ruledoptions)
+	- [修改算法的编号](#修改算法的编号)
+	- [修改算法的关键字](#修改算法的关键字)
+- [<font color="#9c6680">未完待续... </font>](#font-color9c6680未完待续-font)
 
 <!-- /TOC -->
 
@@ -678,8 +685,11 @@ For循环的使用：
 例子如下所示：
 - 代码：
 
-![20220722_111354_45](image/20220722_111354_45.png) 
+![20220722_111354_45](image/20220722_111354_45.png)
 
 - 效果：
 
 ![20220722_111342_57](image/20220722_111342_57.png)
+
+
+# <font color="#9c6680">未完待续... </font>
